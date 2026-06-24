@@ -5,7 +5,7 @@ a_maze_ing.py - A-Maze-ing main program.
 This script:
 1.  reads a configuration file
 2.  generates a maze using the MazeGenerator class,
-3.  writes the output file, and 
+3.  writes the output file, and
 4.  launches an interactive terminal
     display with single-key commands.
 
@@ -264,7 +264,7 @@ def parse_config(path: str) -> ConfigDict:
         height = int(raw["HEIGHT"])
     except ValueError:
         raise ValueError("WIDTH and HEIGHT must be integers.")
-    if width < 3 or height < 3:
+    if width < 2 or height < 2:
         raise ValueError(
             f"WIDTH and HEIGHT must each be at least 3 (got {width}x{height})."
         )

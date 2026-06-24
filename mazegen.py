@@ -264,7 +264,7 @@ class MazeGenerator:
         """Raise ValueError if any parameter is invalid."""
         if not isinstance(width, int) or not isinstance(height, int):
             raise ValueError("WIDTH and HEIGHT must be integers.")
-        if width < 3 or height < 3:
+        if width < 2 or height < 2:
             raise ValueError(
                 f"Maze must be at least 3x3, got {width}x{height}."
             )
