@@ -153,7 +153,9 @@ The maze is an unweighted graph; BFS guarantees the shortest path. The solution 
 ### Additional Constraints
 - **“42” pattern** – a fixed set of closed cells is placed in the centre (if the maze is large enough).  
 - **No 3×3 open areas** – `_fix_wide_open()` scans and breaks any fully open 3×3 block.  
-- **Wall symmetry** – `_sync_walls()` ensures adjacent cells agree on shared walls.  
+- **Wall symmetry** – `_sync_walls()` does not create or remove maze passages.
+It copies each wall state to the neighbouring cell so that
+both sides of every shared wall are represented consistently.
 - **Imperfect mode** – when `PERFECT=False`, about 10% of interior walls are randomly opened to create loops.
 
 ### Output File Format

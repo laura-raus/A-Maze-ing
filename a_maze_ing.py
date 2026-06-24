@@ -5,7 +5,8 @@ a_maze_ing.py - A-Maze-ing main program.
 This script:
 1.  reads a configuration file
 2.  generates a maze using the MazeGenerator class,
-3.  writes the output file, and launches an interactive terminal
+3.  writes the output file, and 
+4.  launches an interactive terminal
     display with single-key commands.
 
 Usage:
