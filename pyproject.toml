@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mazegen"
+version = "1.0.0"
+description = "Maze generation module for A-Maze-ing project"
+readme = "README.md"
+authors = [
+    {name = "laraus"},
+    {name = "adrramos"},
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "mypy",
+    "black",
+    "autopep8",
+    "build",
+]
+
+[tool.setuptools]
+py-modules = ["mazegen"]
+
+[tool.mypy]
+exclude = ["tests/"]
