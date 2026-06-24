@@ -23,6 +23,9 @@ dev = [
     "build",
 ]
 
+[project.scripts]
+mazegen = "mazegen.main:main"
+
 [tool.setuptools]
 py-modules = ["mazegen"]
 
